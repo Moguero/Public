@@ -1,0 +1,40 @@
+body {
+    font-family: helvetica;
+    height : 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+#conteneur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes example {
+  from {background-color: black;}
+  to {background-color: purple;}
+  from {font-size: 20px;}
+  to {font-size: 200px;}
+  from {padding: 5px;}
+  to {padding: 50px;}
+}
+
+.element {
+  display: flex;
+  margin: auto;
+  padding: 50px;
+  align-items: center;
+  border: 5px solid black;
+  border-color: white;
+  font-size: 200px;
+  color: white;
+  animation-name: example;
+  animation-duration: 4s;
+  background-color: purple;
+}
+
