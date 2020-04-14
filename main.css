@@ -10,19 +10,13 @@ body {
   height: 100%;
   width: 100%;
   background-color:black;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  overflow: scroll;
 }
 
-@keyframes example {
-  from {background-color: black;}
-  to {background-color: purple;}
-  from {font-size: 20px;}
-  to {font-size: 200px;}
-  from {padding: 5px;}
-  to {padding: 50px;}
-}
 
 .element {
   background-color: purple;
@@ -30,31 +24,19 @@ body {
   color: white;
   border-color: white;
   border: 5px solid;
+  width : 100px;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 50px;
-  margin:auto;
-
-  animation-name: example;
-  animation-duration: 3s;
 }
 
-.element:nth-child(2){
-  background-color:green;
-  align-self: flex-end;
-}
+
 
 .element:hover{
   background-color: red;
 }
 
-a:link{
-  color: white;
-}
-
-a:active{
-  color:blue
+.element:active {
+  background-color: blue;
 }
 
