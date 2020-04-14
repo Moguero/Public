@@ -9,3 +9,5 @@ let formatDate = today.toDateString();
 let selectedElement = document.getElementById('date');
 
 selectedElement.innerHTML = formatDate;
+
+console
