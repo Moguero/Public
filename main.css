@@ -25,16 +25,36 @@ body {
 }
 
 .element {
-  display: flex;
-  margin: auto;
-  padding: 50px;
-  align-items: center;
-  border: 5px solid black;
-  border-color: white;
+  background-color: purple;
   font-size: 200px;
   color: white;
+  border-color: white;
+  border: 5px solid;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin:auto;
+
   animation-name: example;
-  animation-duration: 4s;
-  background-color: purple;
+  animation-duration: 3s;
+}
+
+.element:nth-child(2){
+  background-color:green;
+  align-self: flex-end;
+}
+
+.element:hover{
+  background-color: red;
+}
+
+a:link{
+  color: white;
+}
+
+a:active{
+  color:blue
 }
 
