@@ -18,16 +18,34 @@ body {
 
 
 /* On veut que chaque bloc contenant une image soit égal à 25% de la largeur total et à 100% en hauteur */
-.blocImage {
+.blocText {
   position: relative;
   width: 25%;
   height : 100%;
   overflow: hidden;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* h1 est en 32px */
+h1 {
+  border:2px solid purple ;
+}
+
+.blocText:hover{
+  background-color: red;
+}
+
+@keyframes zoom {
+  from {font-size: 32px;}
+  to {font-size: 56px;}
 }
 
 
-.image {
-  position: relative;
-  height: 100%;
-  left: -100%;
+.blocText:hover h1 {
+  animation-name: zoom;
+  animation-duration: 0.5s;
+  font-size: 56px;
 }
