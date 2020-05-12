@@ -3,31 +3,75 @@ body {
   padding: 0;
 }
 
+
 #conteneur {
   position: absolute;
-  height: 100%;
-  width: 100%;
-
+  top : 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   display: flex;
   flex-direction: row;
+}
+
+.blocImage {
+  display : flex;
+  width : 25%;
+  height : 100%;
+  overflow : hidden;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
-  overflow: hidden;
+  transition: width 0.5s;
 }
 
+img {
+  height : 100%;
+}
+
+.blocTexte {
+  display : flex;
+  position : absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.blocTexte p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+  color: aliceblue;
+  text-shadow: 4px 4px 4px black;
+  transition: font-size 0.5s;
+}
+
+.blocTexteDates p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+  opacity: 0%;
+  transition: opacity 0.5s;
+}
+
+.blocTexteDates {
+  display : flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  overflow : hidden;
+}
+
+.blocTexteDates:nth-child(2) {
+  top:60px;
+}
+
+.blocTexteDates:nth-child(4) {
+  bottom:60px;
+}
 
 /* On veut que chaque bloc contenant une image soit égal à 25% de la largeur total et à 100% en hauteur */
-.blocImage {
-  position: relative;
-  width: 25%;
-  height : 100%;
+/* .blocImage {
+  display: flex;
   overflow: hidden;
-}
-
-
-.image {
-  position: relative;
-  height: 100%;
-  left: -100%;
+  width : 25%;
+  border: 2px solid red;
 }
